@@ -25,7 +25,7 @@ for (int i = 1; i <= n; i++)
 
 // ODMOCNINA
 
-double odm = 5;
+double odm = 0;
 
 for (int z = n; z > 0; z--)
 {
