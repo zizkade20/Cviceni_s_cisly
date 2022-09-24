@@ -17,14 +17,15 @@ for (int j = 0; j <= n; j++)
 
 // FAKTORIAL --------------
 
+
 for (int i = 1; i <= n; i++)
 {
     faktorial = faktorial * i;
 }
 
 // ODMOCNINA
-/*
-double odm;
+
+double odm = 5;
 
 for (int z = n; z > 0; z--)
 {
@@ -35,11 +36,9 @@ for (int z = n; z > 0; z--)
     {
         odm = z;
         break;
-
     }
-
+    
 }
-*/
 // POZPATKU
 
 string stringPozpatku = string.Empty;
@@ -51,24 +50,24 @@ for (int i = f.Length - 1; i >= 0; i--)
 
 // CIFERNY SOUCET --------------
 
-int suma = 0;
+int sum = 0;
 while (n != 0)
 {
-    suma += n % 10;
+    sum += n % 10;
     n /= 10;
 }
 
 // JEDNICKY
 
 string str = f;
-int countL = str.Split('1').Length - 1;
+int countO = str.Split('1').Length - 1;
 
 Console.WriteLine("n = " + f);
 Console.WriteLine("soucet: " + soucet);
 Console.WriteLine("Faktorial: " + faktorial);
-// Console.WriteLine("Odmocnina: " + odm);
-Console.WriteLine("ciferný součet: " + suma);
-Console.WriteLine("Pocet jednicek v n: " + countL.ToString());
+Console.WriteLine("Odmocnina: " + Math.Sqrt(odm));
+Console.WriteLine("ciferný součet: " + sum);
+Console.WriteLine("Pocet jednicek v n: " + countO.ToString());
 Console.WriteLine($"Pozpatku: {stringPozpatku} ");
 
 
